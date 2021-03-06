@@ -604,6 +604,21 @@ footer .item + .item {
   background-color: var(--accent-color);
 }
 
+.join-form {
+  margin-bottom: 20px;
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.footer-form {
+  margin-left: 93px;
+}
+
 /* Portfolio Styles */
 
 .portfolio {
@@ -816,4 +831,43 @@ footer .item + .item {
 
 .href-modal {
   color: var(--accent-color);
+}
+
+.modal-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white-text);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  outline: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 448px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 38px;
+  margin-left: 42px;
+}
+
+textarea {
+  resize: none;
 }

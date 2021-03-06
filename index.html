@@ -453,6 +453,15 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <span class="join-title">Подпишитесь на рассылку</span>
+          <form name="follow">
+            <label for="email">
+              <input type="email" name="email" placeholder="E-mail" />
+              <button class="modal-button">Подписаться</button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -465,36 +474,35 @@
         </button>
 
         <form name="signup_form">
-          <ul>
-            <li>
-              <label for="username">
-                Имя
-                <input type="text" name="username" placeholder="" />
-              </label>
-            </li>
+          <label for="username">
+            Имя
+            <input type="text" name="username" placeholder="" />
+          </label>
+          <label for="tel">
+            Телефон
+            <input type="tel" name="phone_number" placeholder="" />
+          </label>
+          <label for="email">
+            Почта
+            <input type="text" name="email" placeholder="" />
+          </label>
+          <label>
+            Коментарий
+            <textarea
+              name="feedback"
+              rows="8"
+              placeholder="   Введите текст"
+            ></textarea>
+          </label>
+          <label for="checkbox">
+            <input type="checkbox" name="contract" value="agree" checked />
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="href-modal">Условия договора</a>
+            </span>
+          </label>
 
-            <li>
-              <label for="phone">
-                Телефон
-                <input type="text" name="phone" placeholder="" />
-              </label>
-            </li>
-            <li>
-              <label for="email">
-                Почта
-                <input type="text" name="email" placeholder="" />
-              </label>
-            </li>
-            <li>
-              <label for="checkbox">
-                <input type="checkbox" name="contract" value="agree" checked />
-                <span
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="" class="href-modal">Условия договора</a>
-                </span>
-              </label>
-            </li>
-          </ul>
+          <button class="modal-button">Отправить</button>
         </form>
       </div>
     </div>
