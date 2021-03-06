@@ -457,11 +457,45 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h1 class="modal-text">Оставьте свои данные, мы вам перезвоним</h1>
         <button class="btn-modal" data-modal-close>
           <svg class="x-modal" width="11" height="11">
             <use href="./images/icons.svg#x"></use>
           </svg>
         </button>
+
+        <form name="signup_form">
+          <ul>
+            <li>
+              <label for="username">
+                Имя
+                <input type="text" name="username" placeholder="" />
+              </label>
+            </li>
+
+            <li>
+              <label for="phone">
+                Телефон
+                <input type="text" name="phone" placeholder="" />
+              </label>
+            </li>
+            <li>
+              <label for="email">
+                Почта
+                <input type="text" name="email" placeholder="" />
+              </label>
+            </li>
+            <li>
+              <label for="checkbox">
+                <input type="checkbox" name="contract" value="agree" checked />
+                <span
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="href-modal">Условия договора</a>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
