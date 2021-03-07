@@ -289,15 +289,15 @@
       <div class="container footer">
         <div class="foot-cont">
           <a href="./index.html" class="logo-footer"
-            ><span class="logo">Web</span>Studio</a
+          ><span class="logo">Web</span>Studio</a
           >
           <address class="footer-cont">
             <span class="address item">г. Киев, пр-т Леси Украинки, 26</span>
             <a href="mailto:info@example.com" class="footer-cont item"
-              >info@example.com</a
+            >info@example.com</a
             >
             <a href="tel:+380991111111" class="footer-cont item"
-              >+38 099 111 11 11</a
+            >+38 099 111 11 11</a
             >
           </address>
         </div>
@@ -335,12 +335,17 @@
           </ul>
         </div>
         <div class="footer-form">
-          <span class="join-title">Подпишитесь на рассылку</span>
           <form name="follow">
-            <label for="email">
+            <label class="sub-title">Подпишитесь на рассылку</label>
+            <div class="footer-sub">
               <input type="email" name="email" placeholder="E-mail" />
-              <button class="modal-button">Подписаться</button>
-            </label>
+              <button type="submit" class="send-button">
+                Подписаться
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
