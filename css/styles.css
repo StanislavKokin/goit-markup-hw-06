@@ -851,7 +851,7 @@ footer .item + .item {
 
 .form-field label {
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.167;
   text-align: left;
   color: var(--grey-text);
@@ -861,7 +861,7 @@ footer .item + .item {
   position: relative;
 }
 
-.form-field input {
+.form-field .form-group input {
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -883,7 +883,19 @@ footer .item + .item {
   font-size: 14px;
 }
 
-.form-field input:focus, .form-field input:focus + .form-icon, .form-field textarea:focus {
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-field input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
@@ -923,8 +935,8 @@ footer .item + .item {
 
 .check-group {
   display: flex;
-  align-items: center;
   margin-bottom: 30px;
+  justify-content: space-around;
 }
 
 .modal-text {
@@ -947,15 +959,38 @@ footer .item + .item {
 
 .form-check {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  left: 49px;
   margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check-icon {
+  cursor: pointer;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+}
+
+.check-icon use {
+  display: none;
+  width: 15px;
+  height: 16px;
+}
+
+.form-check:checked + .check-icon {
+  border: none;
+  width: 15px;
+  height: 16px;
+}
+
+.form-check:checked + .check-icon use {
+  display: block;
+  width: 15px;
+  height: 16px;
 }
 
 .modal-button {
